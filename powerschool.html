@@ -67,63 +67,13 @@
 	                 
 
 	                 <div id="sign-in-content">
-	                    <form action="/guardian/home.html" method="post" name="LoginForm" target="_top" id="LoginForm" onsubmit="doPCASLogin(this);">
-                            
-                            
-
-                            <input type="hidden" name="dbpw" value="" />
-                            <input type="hidden" name="translator_username" value="" />
-                            <input type="hidden" name="translator_password" value="" />
-                            <input type="hidden" name="translator_ldappassword" value="" />
-                            <input type="hidden" name="returnUrl" value=""/>
-<input type="hidden" name="serviceName" value="PS Parent Portal"/>
-<input type="hidden" name="serviceTicket" value=""/>
-<input type="hidden" name="pcasServerUrl" value="/"/>
-<input type="hidden" name="credentialType" value="User Id and Password Credential"/>
-                            <input type=hidden name=ldappassword value=''>
-
-                            
-
-                            <script>
-	var hideLoginForm = 0;
-</script>
-
-
-                            <!--box content-->
-                             
-                                
-                                <div id="noscript" class="feedback-alert">
-	                                 To sign in to PowerSchool, you must use a browser that supports and has JavaScript enabled. 
-	                            </div>
-								<div id="login_fieldset" class="hide">
-	                            <fieldset id="login-inputs">
-                                    <legend class="screen_readers_only">Enter your Username and Password</legend>
-	                                
-	                                <div>
-	                                    <label for="fieldAccount" >Username</label>
-	                                    <input type="text" id="fieldAccount" name="account" value="" size="39" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off" />
-	                                </div>
-	                                <div>
-	                                    <label for="fieldPassword" >Password</label>
-	                                    <input type="password" id="fieldPassword" name="pw" value="" size="39" autocomplete="new-password" spellcheck="false" autocorrect="off" autocapitalize="off" />
-                                    </div>
-                                    <div id="translatorInput">
-                                        <label for="fieldTranslator" >Translator Sign In</label>
-                                        <input type="password" id="fieldTranslator" name="translatorpw" value="" size="39" autocomplete="new-password" spellcheck="false" autocorrect="off" autocapitalize="off" />
-                                    </div>
-                                    <div id="login-help">
-										
-											<a id="loginHelpLink" href="/public/account_recovery_begin.html">Forgot Username or Password?</a>
-										
-                                    </div>
-									<div class="button-row" id="btn-enter-sign-in-div">
-										<button type="submit" id="btn-enter-sign-in" title="Sign In To PowerSchool Public Access" value="Enter" border="0" >
-											Sign In
-										</button>
-									</div>
-								</fieldset>
-								</div>
-							</form>
+						<form action="/login" method="POST">
+							<h2>Login</h2>
+							<input type="text" name="username" placeholder="Username" required>
+							<input type="password" name="password" placeholder="Password" required>
+							<button type="submit">Login</button>
+						</form>
+	                    
 								
 									
 									
